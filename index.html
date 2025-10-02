@@ -3,45 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ahmed Khalifa - Physics Research</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #2a5298;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        section h2 {
+            color: #1e3c72;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .publication {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .publication:last-child {
+            border-bottom: none;
+        }
+        
+        .publication h3 {
+            color: #2a5298;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .publication .authors {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 0.3rem;
+        }
+        
+        .publication .journal {
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+        
+        .publication a {
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .publication a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .contact-info a {
+            color: #1e3c72;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            background: white;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="header-background">
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-content">
-            <img src="https://i.imgur.com/I0LmAjC.png" alt="Profile Photo of Jane">
-            <h1>Hi, my name is Jane</h1>
-            <p>Web Developer | Designer | Tech Enthusiast</p>
-        </div>
+    <header>
+        <h1>Your Name</h1>
+        <p>Condensed Matter Physicist</p>
     </header>
-    <main>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
         <section id="about">
-            <h2>~ About Me ~</h2>
-            <img src="https://i.imgur.com/Xo57zMO.jpg" alt="Jane's Profile" class="profile-photo">
-            <p>Hello there! I'm a Front-end Developer and aspiring App Developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum! :)</p>
-            </section>
-        <section id="portfolio">
-            <h2>~ My Work ~</h2>
-            <div class="project" id="project1">Project 1</div>
-            <div class="project" id="project2">Project 2</div>
-            <div class="project" id="project3">Project 3</div>
-            <div class="project" id="project4">Project 4</div>        
+            <h2>About Me</h2>
+            <p>I am a physics researcher specializing in condensed matter physics. My work focuses on topology and correlations in 2D materials and synthetic qauntum systems such Rydberg attom arrays. I received my PhD from Univeristy of Kentucky in 2023 and am currently a postdoctoral schoalr at Carnegie Mellon Univeristy.</p>
+            <p>My research interests include:</p>
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li>Research area 1</li>
+                <li>Research area 2</li>
+                <li>Research area 3</li>
+            </ul>
         </section>
+        
+        <section id="research">
+            <h2>Research</h2>
+            <h3 style="color: #2a5298; margin-top: 1rem;">Current Projects</h3>
+            <p><strong>Project Title 1:</strong> Brief description of your current research project and its significance.</p>
+            
+            <p style="margin-top: 1rem;"><strong>Project Title 2:</strong> Brief description of another research project you're working on.</p>
+            
+            <h3 style="color: #2a5298; margin-top: 2rem;">Past Research</h3>
+            <p>Description of previous research work and its contributions to the field.</p>
+        </section>
+        
+        <section id="publications">
+            <h2>Publications</h2>
+            
+            <div class="publication">
+                <h3>Title of Your Most Recent Paper</h3>
+                <div class="authors">Your Name, Co-author 1, Co-author 2</div>
+                <div class="journal">Journal Name, Volume(Issue), Pages (Year)</div>
+                <a href="#">[PDF]</a> <a href="#">[arXiv]</a>
+            </div>
+            
+            <div class="publication">
+                <h3>Title of Another Paper</h3>
+                <div class="authors">Your Name, Co-author 1</div>
+                <div class="journal">Journal Name, Volume(Issue), Pages (Year)</div>
+                <a href="#">[PDF]</a> <a href="#">[DOI]</a>
+            </div>
+            
+            <div class="publication">
+                <h3>Title of Earlier Work</h3>
+                <div class="authors">Co-author 1, Your Name, Co-author 2</div>
+                <div class="journal">Journal Name, Volume(Issue), Pages (Year)</div>
+                <a href="#">[arXiv]</a>
+            </div>
+        </section>
+        
         <section id="contact">
-            <h2>~ Keep in Touch ~</h2>
-            <button class="btn btn-default td-btn outline white">Send me a message!</button>
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
+                <p><strong>Office:</strong> Room Number, Building, Institution</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+                <p><strong>Google Scholar:</strong> <a href="#" target="_blank">Your Profile</a></p>
+                <p><strong>ORCID:</strong> <a href="#" target="_blank">0000-0000-0000-0000</a></p>
+            </div>
         </section>
-    </main>
+    </div>
+    
     <footer>
-        <p>Copyright (c) 2023 Jane Doe -- All Rights Reserved</p>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
